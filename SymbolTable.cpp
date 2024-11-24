@@ -1,5 +1,5 @@
 #include "SymbolTable.h"
-
+#include <algorithm>
 
 bool SymbolTable::isVar(const std::string& target) 
 {

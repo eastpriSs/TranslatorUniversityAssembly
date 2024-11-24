@@ -162,9 +162,9 @@ Token Lexer::scan()
 {
     Token scanningToken;
 
-    if (it == end)
+    if (forwardIt >= end)
         return scanningToken;
-    
+        
     forwardIt = it + 1;
     
     skipWhiteSpaces();

@@ -1,4 +1,3 @@
-#pragma once
 #include "Compiler.h"
 #include "Lexer.h"
 #include "Parser.h"

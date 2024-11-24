@@ -29,6 +29,7 @@ namespace Keyword
         {"jnz", ttype::jmpConstruction},
         {"call", ttype::call},
         {"ret", ttype::ret},
+        {"stop", ttype::stop},
         {"out", ttype::OUT}
 
     };

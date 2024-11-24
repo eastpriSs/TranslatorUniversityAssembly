@@ -7,8 +7,8 @@ class CodeGenerator final : public Visitor
 {
 private:
     Parser* pars = nullptr;
-    uint8_t portCounter = 0;
-    uint8_t loopCounter = 0;
+    int portCounter = 0;
+    int loopCounter = 0;
 
     std::string visit(Operand&) override;
     std::string visit(Assgm&) override;
