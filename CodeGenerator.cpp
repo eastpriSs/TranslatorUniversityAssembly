@@ -249,7 +249,7 @@ void generateCmpCommand(const std::string& left, const std::string& right, strin
     if (isOperandGlobal(right))
         ss << "Semantic Error: right operand cant be variable";
     else if (SymbolTable::instance().isRegister(right))
-        ss << "cmr " << left << ',' << right;
+        ss << "cmr " << freeRegister << ',' << right;
     else
         if (isOperandGlobal(left))
             ss << "cmi " << freeRegister << ',' << right;
